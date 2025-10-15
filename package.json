@@ -1,5 +1,5 @@
 {
-  "name": "todolist_project",
+  "name": "clarapast_todolist_project",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,13 +7,8 @@
     "lib": "lib",
     "test": "test"
   },
-  "dependencies": {
-    "express": "4",
-    "http-errors": "1",
-    "morgan": "1.9"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "babel": "babel lib --out-dir dist --presets=@babel/preset-env"
   },
   "repository": {
     "type": "git",
@@ -24,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/clarapastore/todolist_project/issues"
   },
-  "homepage": "https://github.com/clarapastore/todolist_project#readme"
+  "homepage": "https://github.com/clarapastore/todolist_project#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.28.3",
+    "@babel/core": "^7.28.4",
+    "@babel/preset-env": "^7.28.3",
+    "eslint": "^9.37.0"
+  }
 }
